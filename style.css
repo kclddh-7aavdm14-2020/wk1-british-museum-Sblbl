@@ -1,3 +1,10 @@
+:root {
+	--yell: #FEDA32;
+	--l_yell: #FFFAE6;
+	--wh: #FFF;
+	--bl: #000;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,21 +13,10 @@
 
 body {
 	font-family: 'David Libre', serif;
-	background-color: #000;
+	background-color: var(--bl);
 	padding: 2vh 10vw;
 	font-size: 14pt;
 	line-height: 1.2em;
-}
-
-header {
-	width: 80vw;
-	height: 48px;
-	padding: 12px 24px;
-	background-color: #FEDA32;
-	position: fixed;
-	font-weight: 700;
-	top: 0;
-	z-index: 10;
 }
 
 div {
@@ -43,24 +39,50 @@ h1, h2, h3 {
 	line-height: 1.5em;
 }
 
+header {
+	width: 80vw;
+	/*height: 64px;*/
+	padding: 12px 24px 0px 24px;
+	background-color: var(--yell);
+	position: fixed;
+	font-weight: 700;
+	top: 0;
+	z-index: 10;
+}
+
+header h1 {
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1em;
+}
+
+nav li{
+	display: inline-block;
+	font-size: 1rem;
+	margin-top: 4px;
+	padding: 12px;
+	text-align: center;
+	width: 96px;
+}
+
+li.current {
+	background-color: var(--l_yell);
+}
+
 p {
 	max-width: 40em;
 }
 
 a {
-	color: #000;
+	color: var(--bl);
 }
 
 a :visited {
-	color: #000;
+	color: var(--bl);
 }
 
 a :active {
-	color: #000;
-}
-
-header a {
-	margin-right: 12px;
+	color: var(--bl);
 }
 
 ul, ol {
@@ -80,18 +102,18 @@ img {
 .content {
 	width: 80vw;
 	position: absolute;
-	top: 48px;
-	min-height: 92vh;
-	background-color: #FFF;
+	top: 78px;
+	min-height: 89vh;
+	background-color: var(--wh);
 	padding: 0; 
 }
 
 .li_higlight {
-	background-color: #FEDA32;
+	background-color: var(--yell);
 }
 
 .basic_info {
-	background-color: #fffae6;
+	background-color: var(--l_yell);
 }
 
 #intro {
