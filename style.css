@@ -94,6 +94,44 @@ img {
 	margin-bottom: 12px;
 }
 
+img.blog_img {
+	position: relative;
+	height: 260px;
+	width: auto;
+}
+
+img.blog_img:hover{
+	width: 100%;
+	height: auto;
+}
+
+.blog_navigator {
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	padding: 18px 12px; 
+	background-color: var(--l_yell);
+	font-size: 32pt;
+	text-align: center;
+	top: 46vh;
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.blog_navigator#previous{
+	left: 0;
+}
+.blog_navigator#next{
+	right: 0;
+}
+
+
 .section {
 	padding: 12px 32px;
 	margin: 0;
