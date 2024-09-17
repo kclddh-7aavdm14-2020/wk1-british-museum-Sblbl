@@ -1,0 +1,160 @@
+:root {
+	--yell: #FEDA32;
+	--l_yell: #FFFAE6;
+	--wh: #FFF;
+	--bl: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'David Libre', serif;
+	background-color: var(--bl);
+	padding: 2vh 10vw;
+	font-size: 14pt;
+	line-height: 1.2em;
+}
+
+div {
+	margin-bottom: 12px;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+h1, h2, h3 {
+	line-height: 1.5em;
+}
+
+header {
+	width: 80vw;
+	/*height: 64px;*/
+	padding: 12px 24px 0px 24px;
+	background-color: var(--yell);
+	position: fixed;
+	font-weight: 700;
+	top: 0;
+	z-index: 10;
+}
+
+header h1 {
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1em;
+}
+
+nav li{
+	display: inline-block;
+	font-size: 1rem;
+	margin-top: 4px;
+	padding: 12px;
+	text-align: center;
+	width: 96px;
+}
+
+li.current {
+	background-color: var(--l_yell);
+}
+
+p {
+	max-width: 40em;
+}
+
+a {
+	color: var(--bl);
+}
+
+a :visited {
+	color: var(--bl);
+}
+
+a :active {
+	color: var(--bl);
+}
+
+ul, ol {
+	margin: .5em 16px;
+}
+
+img {
+	max-width: 80%;
+	margin-bottom: 12px;
+}
+
+img.blog_img {
+	position: relative;
+	max-height: 300px;
+}
+
+img.blog_img:hover{
+	max-width: 100%;
+	max-height: 600px;
+}
+
+.blog_navigator {
+	position: fixed;
+	width: 64px;
+	height: 64px;
+	padding: 18px 12px; 
+	background-color: var(--l_yell);
+	font-size: 32pt;
+	text-align: center;
+	top: 46vh;
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.blog_navigator#previous{
+	left: 0;
+}
+.blog_navigator#next{
+	right: 0;
+}
+
+
+.section {
+	padding: 12px 32px;
+	margin: 0;
+}
+
+.content {
+	width: 80vw;
+	position: absolute;
+	top: 78px;
+	min-height: 89vh;
+	background-color: var(--wh);
+	padding: 0; 
+}
+
+.li_higlight {
+	background-color: var(--yell);
+}
+
+.basic_info {
+	background-color: var(--l_yell);
+}
+
+#intro {
+	font-size: 1.5rem;
+	line-height: 1.2em;
+}
+
